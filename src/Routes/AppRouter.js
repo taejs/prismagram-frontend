@@ -12,11 +12,11 @@ const LoggedOutRoutes = () => <>
 
 const AppRouter = ({isLoggedIn}) => <Router>
   <Switch>
-    isLoggedIn ?
+    {isLoggedIn ?
     <LoggedInRoutes /> :
-    <LoggedOutRoutes />
+    <LoggedOutRoutes />}
   </Switch>
-</Router>
+</Router>;
 
 AppRouter.propTypes = {
   isLoggedIn : PropTypes.bool.isRequired
