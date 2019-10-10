@@ -1,5 +1,5 @@
 export const defaults = {
-  isLoggedIn : localStorage.getItem('TOKEN') !== null ? true : false
+  isLoggedIn : Boolean(localStorage.getItem('TOKEN')) || false
 }
 export const resolvers = {
   Mutation : {
