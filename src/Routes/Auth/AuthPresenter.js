@@ -52,6 +52,7 @@ export default ({
     email,
     lastname,
     firstname,
+    username,
     onLogin
   }) => {
   console.log('presneter' + action);
@@ -68,6 +69,7 @@ export default ({
              <Input placeholder={"First name"} {...firstname}/>
              <Input placeholder={"Last name"} {...lastname}/>
              <Input placeholder={"Email"} {...email} type={"email"}/>
+             <Input placeholder={"User Name"} {...username}/>
              <Button text={"Sign up"} />
            </form>
          )}
