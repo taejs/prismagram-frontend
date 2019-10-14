@@ -6,8 +6,18 @@ export const LOG_IN = gql`
    }
 `
 
-export const LOG_IN = gql`
-   mutation createAccount($user: User!) {
-    createAccount(user:$user)
+export const CREATE_ACCOUNT = gql`
+   mutation createAccount(
+       $username : String!
+       $email : String!
+       $firstName : String
+       $lastName : String
+   ) {
+       createAccount(
+           usernam :$username, 
+           email : $email,
+           firstName : $firstName,
+           lastName : $lastName
+       )
    }
 `
